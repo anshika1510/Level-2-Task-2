@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--header menu-->
+    <nav>
+        <div class="header">Web Dev Chronicles</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+<div class="content">
+    <div class="text-container">
+        <h2 class="first">Welcome to Web Dev Chronicles</h2>
+    </div>
+    <div class="logo-container">
+        <img class="img" src="/images/cognyfiz-logo.jpeg">
+    </div>
+</div>
+
+<div class="second-content">
+    <div class="about-image">
+        <img class="about-img" src="/images/about.png">
+    </div>
+
+    <div class="about-text">
+        <h3>About Cognyfiz Technologies</h3>
+        <p class="para">Cognifyz Technologies is a forward-thinking company focused on web development, 
+            AI integration, and user-centered design. 
+            It aims to simplify complex digital challenges by creating efficient, scalable, and intuitive web applications. 
+            With an emphasis on innovation and technology, the company helps businesses enhance their digital presence while delivering seamless user experiences.
+
+            In the context of internship, Cognifyz Technologies provides a great learning environment where you contribute to real-world projects, 
+            honing your skills in UI/UX design, front-end development, and problem-solving. 
+            Your role here isn’t just about coding—it’s about creating meaningful digital experiences that align with modern industry standards.</p> 
+    </div>
+</div>
+
+
+    <!--javascript code-->
+    <script>
+        function toggleMenu() {
+        const menu = document.querySelector('.links');
+        menu.classList.toggle('show');
+    }
+    </script>
+
+</body>
+</html>
